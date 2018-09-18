@@ -24,6 +24,10 @@ bind "set completion-ignore-case on"
 # Allow single-click to display all tab results if more than one option
 bind "set show-all-if-ambiguous on"
 
+# Hide/Show Hidden Files
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
